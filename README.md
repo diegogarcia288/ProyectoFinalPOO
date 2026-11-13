@@ -1,4 +1,4 @@
-# Frutería TU FRUTA MADRE 
+# Fruver TU FRUTA MADRE 
 # BY: Diego García, Eduardo Carrera, Ana Tabares
 
 *Nuestro negocio vende todo tipo de revueltos:*
@@ -34,18 +34,35 @@ FRUTAS -- (Hereda de productos)
 
 GRANOS -- (Hereda de productos)
 
-CLIENTES -- (Hereda de personas)
+CLIENTES -- (Hereda de personas):
 
-EMPLEADOS -- (Hereda de personas)
+• Atributos: Teléfono
 
-VENTAS
+• Métodos: verProductos()
+
+EMPLEADOS -- (Hereda de personas):
+
+• Atributos: Cargo, Salario
+
+• Métodos: registrarVenta()
+
+VENTAS:
+
+• Atributos: idVenta, Cliente, Empleado.
 
 PAGOS
+
+• Atributos: idPago, monto, metodoPago, estadoPago.
+
+• Métodos: procesarPago()
 
 CONSOLA
 
 DETALLE DE VENTAS
 
+• Atributos: producto, cantidad, total
+
+• Métodos: calcularTotalConIva()
 
 
 

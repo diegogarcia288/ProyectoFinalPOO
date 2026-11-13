@@ -16,7 +16,7 @@
 
 # CLASES, MÉTODOS, ATRIBUTOS, RELACIONES:
 
-*Clases Padre:*
+*Clases, atributos y métodos*
 
 PRODUCTOS:
 
@@ -28,25 +28,26 @@ PERSONAS:
 
 • Atributos: Nombre, Cédula
 
-*Herencias Producto:*
+VERDURAS -- (Hereda de productos)
 
-• Verduras
+FRUTAS -- (Hereda de productos)
 
-• Frutas
+GRANOS -- (Hereda de productos)
 
-• Granos
+CLIENTES -- (Hereda de personas)
 
-*Herencias Persona:*
+EMPLEADOS -- (Hereda de personas)
 
-• Cliente
+VENTAS
 
-Métodos: comprar() , devolver() , 
+PAGOS
 
-• Empleado
+CONSOLA
 
-Métodos: añadirCliente() , eliminarCliente() , mostrarClientes()
+DETALLE DE VENTAS
 
-*Clases aparte:*
+
+
 
 
 

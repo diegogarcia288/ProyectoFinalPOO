@@ -21,6 +21,7 @@
 PRODUCTOS:
 
 • Atributos: Tipo de producto, nombre, stock, ID, precio
+
 • Métodos: añadirProducto() , buscarId() , actualizarPrecio() , eliminarProducto()
 
 PERSONAS: 

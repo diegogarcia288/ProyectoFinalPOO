@@ -1,0 +1,15 @@
+modelo\Personas.class
+modelo\Ventas.class
+ejecucion\Consola.class
+modelo\DetalleVenta.class
+modelo\Granos.class
+logica\Catalogo.class
+modelo\Verduras.class
+logica\GestorVentas.class
+modelo\PagoEfectivo.class
+modelo\Clientes.class
+modelo\PagoTargeta.class
+logica\GestorClientes.class
+modelo\Productos.class
+modelo\Frutas.class
+modelo\Pagos.class

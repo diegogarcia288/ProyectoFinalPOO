@@ -18,11 +18,11 @@
 
 *Clases, atributos y métodos*
 
-PRODUCTOS:
+PRODUCTOS (Se asocia con Catalogos , Se asocia con DetalleVenta) :
 
-• Atributos: Tipo de producto, nombre, stock, ID, precio
+• Atributos: Tipo de producto, nombre, stock, IdProducto, precio
 
-• Métodos: añadirProducto() , buscarId() , actualizarPrecio() , eliminarProducto()
+• Métodos: actualizarPrecio(nuevoPrecio : double) , calcularPrecioVenta(cantidad : int) , actualizarStock(nuevoStock : int)
 
 PERSONAS: 
 
@@ -30,39 +30,74 @@ PERSONAS:
 
 VERDURAS -- (Hereda de productos)
 
+• Métodos: Sobrescribe métodos de Productos
+
 FRUTAS -- (Hereda de productos)
+
+• Métodos: Sobrescribe métodos de Productos
 
 GRANOS -- (Hereda de productos)
 
-CLIENTES -- (Hereda de personas):
+• Métodos: Sobrescribe métodos de Productos
+
+CLIENTES -- (Hereda de personas , Se asocia con GestorClientes):
 
 • Atributos: Teléfono
 
-• Métodos: verProductos()
+VENTAS (Relación de Composición con DetalleVenta y se asocia con GestorVentas):
 
-EMPLEADOS -- (Hereda de personas):
+• Atributos: idVenta, Cliente, numeroRecibo, contadorVentas, items, pago
 
-• Atributos: Cargo, Salario
+DETALLEVENTA (Relación de Composición con Ventas):
 
-• Métodos: registrarVenta()
+• Atributos: producto, cantidad, total, iva.
 
-VENTAS:
+• Métodos: calcularSubTotal() , calcularTotalConIva()
 
-• Atributos: idVenta, Cliente, Empleado.
+PAGOS (Se asocia con Ventas):
 
-PAGOS
+• Atributos: idPago, monto, estadoPago.
 
-• Atributos: idPago, monto, metodoPago, estadoPago.
+• Métodos: obtenerMetodoPago
 
-• Métodos: procesarPago()
+PAGOEFECTIVO (Hereda de Pagos)
 
-CONSOLA
+PAGOTARGETA (Hereda de Pagos)
 
-DETALLE DE VENTAS
+GestorVentas
 
-• Atributos: producto, cantidad, total
+• Atributos: venta
 
-• Métodos: calcularTotalConIva()
+• Métodos: registrarVentas(Ventas nuevaVenta) , generarReportesVentas()
+
+GestorClientes
+
+• Atributos: cliente
+
+• Métodos: registrarCliente(Clientes nuevoCliente) , buscarPorDocumento(String Cedula)
+
+Catalogo
+
+• Atributos: producto
+
+• Métodos: añadirProducto(Productos nuevoProducto) , buscarPorId(int idProducto) , listarBajoStock(int stockBajo) , obtenerProductos()
+
+Console (depende de GestorVentas, GestorClientes, Catalogo) :
+
+• Atributos: textIO
+
+• Métodos:  main(args: String[]): void ,  mostrarMenu(): void ,  registrarClienteMenu(): void , buscarClienteMenu(): void , buscarClienteMenu(): void , buscarClienteMenu(): void , añadirProductoMenu(): void , listarBajoStockMenu(): void , registrarVentaMenu(): void , listarCatalogoMenu(): void
+
+
+
+
+
+
+
+
+
+
+
 
 
 
